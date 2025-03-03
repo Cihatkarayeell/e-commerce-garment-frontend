@@ -19,13 +19,16 @@
 @use "partial/footer";
 @use "partial/label";
 
-// Import components
-@use "component/container";
-@use "component/layout";
-@use "component/box";
-@use "component/table";
 
 // Import pages
 @use "pages/index";
 @use "pages/about";
 @use "pages/contact";
+
+// Import components
+@use "component/container";
+@use "component/layout";
+@use "component/box";
+@use "component/table";
+@use "component/home-hero";
+@use "component/product-categories";

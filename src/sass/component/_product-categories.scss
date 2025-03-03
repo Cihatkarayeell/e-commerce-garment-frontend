@@ -1,0 +1,83 @@
+@use "../config/fonts" as *;
+
+.product-categories {
+    padding-bottom: 8rem;
+    padding-top: 3.4rem;
+    width: 100%;
+
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 2.1rem;
+    }
+
+    .category-card {
+        overflow: hidden;
+        position: relative;
+        height: 21rem;
+
+        .category-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+            }
+        }
+
+        .category-content {
+            position: relative;
+            z-index: 2;
+            padding: 3.2rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            h2 {
+                color: #FFFFFF;
+                font-size: 2.4rem;
+                line-height: normal;
+                @include font-medium;
+                margin-bottom: .6rem;
+            }
+
+            p {
+                color: #FFFFFF;
+                font-size: 1.7rem;
+                line-height: normal;
+                @include font-regular;
+                margin-bottom: 2.8rem;
+            }
+
+            .category-button {
+                background-color: #39B54A;
+                border-radius: .4rem;
+                padding: 1.1rem 1.7rem;
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 1.5rem;
+                line-height: normal;
+                @include font-medium;
+                width: max-content;
+                transition: background-color .3s ease;
+            }
+        }
+    }
+}

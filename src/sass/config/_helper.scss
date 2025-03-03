@@ -326,6 +326,10 @@ $indent-step: 0.5;
   position: relative;
 }
 
+.position-unset {
+  position: unset;
+}
+
 .position-sticky {
   position: sticky;
   top: 0;

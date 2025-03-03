@@ -1,35 +1,63 @@
 {% extends "layout/layout-general.html" %}
 {% block content %}
-<div class="home">
-    <section class="hero">
-        <h1 class="hero__title">Webpack Frontend Starter Kit</h1>
-        <p class="hero__description">Modern Frontend Development Starter Kit with Webpack</p>
-    </section>
 
-    <section class="features">
-        <h2 class="features__title">Özellikler</h2>
-        <div class="features__grid">
-            <div class="feature-card">
-                <h3>Webpack 5</h3>
-                <p>Modern modül paketleyici ile hızlı ve optimize edilmiş build süreci</p>
+<!-- Hero Section -->
+<section class="hero" id="homeHero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>%25'e varan indirimler!</h1>
+                <p>Çok özel dikiş makinası parçaları indirimli fiyatlarla!</p>
+                <p class="warning-text">Kaçırmayın!</p>
+                <a href="/urunler" class="cta-button">Ürünlere Git</a>
             </div>
-            <div class="feature-card">
-                <h3>SASS Desteği</h3>
-                <p>Modern CSS ön işlemcisi ile gelişmiş stil yazımı</p>
-            </div>
-            <div class="feature-card">
-                <h3>Babel</h3>
-                <p>Modern JavaScript'i eski tarayıcılarda çalışacak şekilde dönüştürme</p>
-            </div>
-            <div class="feature-card">
-                <h3>Hot Reload</h3>
-                <p>Geliştirme sürecinde anlık değişiklik görüntüleme</p>
-            </div>
-        </div> 
-        <div class="box-img">
-            <img src="../../img/background/background.jpg" alt="">
         </div>
+    </div>
+    <div class="hero-image">
+        <!-- <img src="../../img/hero/hero-discount.jpg" alt="İndirim Görseli"> -->
+    </div>
+</section>
 
-    </section>
-</div>
+<section class="product-categories">
+    <div class="container">
+        <div class="categories-grid">
+            <!-- Bıçaklar Card -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="../../img/card/product-1.png" alt="Dikiş Makinası Bıçakları">
+                </div>
+                <div class="category-content">
+                    <h2>Bıçaklar</h2>
+                    <p>Dikiş Makinası Bıçakları</p>
+                    <a href="/bicaklar" class="category-button">Hemen Satın Al</a>
+                </div>
+            </div>
+
+            <!-- İğneler Card -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="../../img/card/product-2.png" alt="Dikiş Makinası İğneleri">
+                </div>
+                <div class="category-content">
+                    <h2>İğneler</h2>
+                    <p>Dikiş Makinası İğneleri</p>
+                    <a href="/igneler" class="category-button">Hemen Satın Al</a>
+                </div>
+            </div>
+
+            <!-- Lüperler Card -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="../../img/card/product-3.png" alt="Dikiş Makinası Lüperleri">
+                </div>
+                <div class="category-content">
+                    <h2>Lüperler</h2>
+                    <p>Dikiş Makinası Lüperleri</p>
+                    <a href="/luperler" class="category-button">Hemen Satın Al</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}
