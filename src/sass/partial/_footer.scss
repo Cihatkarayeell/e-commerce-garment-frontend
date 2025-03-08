@@ -1,17 +1,118 @@
 // Footer styles
-.footer {
-  padding: 2rem 0;
-  background-color: #f8f9fa;
-  margin-top: auto;
-  
-  &__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@use "../config/fonts" as *;
 
-  &__copyright {
-    font-size: 0.875rem;
-    color: #6c757d;
-  }
+.footer-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 2.4rem;
+    border-top: .1rem solid #F5F5F5;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    .features-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 0 3rem;
+    }
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0 1rem;
+        img {
+            margin-bottom: 1.6rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            color: #000000;
+            @include font-medium;
+            margin-bottom: .2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            color: #434343;
+            @include font-regular;
+        }
+    }
+}
+.footer {
+    .container{
+        height: 44rem;
+    }
+    background-color: #000000;
+    min-height: 44rem;
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 2.4rem;
+        padding-bottom: 3.6rem;
+        padding-top: 6.5rem;        
+        .footer-col {
+            h4 {
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                color: #FFFFFF;
+                @include font-medium;
+                margin-bottom: 2rem;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-bottom: 2.6rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        @include font-regular;
+                        opacity: .6;
+                    }
+                }
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: normal;
+                color: #FFFFFF;
+                @include font-regular;
+                opacity: .6;
+                max-width: 85%;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-bottom: 2.6rem;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        p {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            color: #FFFFFF;
+            text-decoration: none;
+            @include font-regular;
+            opacity: .8;
+            &:first-child {
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                margin-bottom: .7rem;
+            }
+        }
+    }
 }

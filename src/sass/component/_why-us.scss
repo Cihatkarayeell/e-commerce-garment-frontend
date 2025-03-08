@@ -1,0 +1,80 @@
+@use "../config/fonts" as *;
+.why-us{
+    border-top: .1rem solid #F5F5F5;
+    border-bottom: .1rem solid #F5F5F5;
+    padding-top: 5.9rem;
+    padding-bottom: 3.8rem;
+    .section-title{
+        font-size: 3rem;
+        line-height: normal;
+        @include font-semibold;
+        margin-bottom: 1.2rem;
+        text-align: center;
+        color: #71C2E3;
+    }
+    .section-description{
+        font-size: 1.7rem;
+        color: #434343;
+        line-height: normal;
+        @include font-medium;
+        text-align: center;
+        margin-bottom: 6.9rem;
+        padding-inline: 18rem;
+    }
+    .features-grid{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .feature-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            .feature-icon{
+                width: 8rem;
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2.1rem;
+            }
+            .feature-title{
+                font-size: 2.4rem;
+                line-height: normal;
+                @include font-semibold;
+                color: #000000;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+            .feature-description{
+                font-size: 1.6rem;
+                line-height: normal;
+                @include font-regular;
+                color: #000000;
+                text-align: center;
+            }
+
+        }
+    }
+}
+.loyal-customers{
+    padding-top: 5.8rem;
+    padding-bottom: 5.5rem;
+    .section-title{
+        font-size: 3rem;
+        line-height: normal;
+        @include font-semibold;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #71C2E3;
+    }
+    .section-description{
+        font-size: 1.7rem;
+        color: #434343;
+        line-height: normal;
+        @include font-medium;
+        text-align: center;
+        margin-bottom: 6.9rem;
+        padding-inline: 18rem;
+    }
+}

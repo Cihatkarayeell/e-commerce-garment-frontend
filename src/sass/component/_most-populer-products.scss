@@ -1,0 +1,15 @@
+@use "../config/fonts" as *;
+
+
+.most-populer-products{
+    width: 100%;
+    padding-top: 5.6rem;
+    .section-title{
+        font-size: 3rem;
+        line-height: normal;
+        @include font-semibold;
+        margin-bottom: 3.3rem;
+        text-align: center;
+        color: #ED7520;
+    }
+}
