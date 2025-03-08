@@ -3,6 +3,7 @@ import '../sass/main.scss';
 
 // Import modules
 import './partial/external-link-norefer';
+import './partial/blog-pagination';
 import './partial/format-tel-link';
 import './partial/protect-image';
 import './partial/responsive-table';
