@@ -1,0 +1,145 @@
+@use "../config/fonts" as *;
+
+.account-page {
+    width: 100%;
+    padding-top: 1.5rem;
+    margin-bottom: 12rem;
+    .account-form {
+        width: 100%;
+
+        h1{
+            margin-bottom: 3.3rem;
+            text-align: left;
+            color:#000;
+            @include font-semibold;
+        }
+
+        .form-grid {
+            display: flex;
+            gap: 0 6.9rem;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .login-form{
+            max-width: 48.2rem;
+            width: 100%;
+            .submit-btn{
+                margin-bottom: 4rem;
+            }
+        }
+        .register-form{
+            max-width: 61.8rem;
+            width: 100%;
+        }
+        .login-form,
+        .register-form {
+            h2 {
+                color: #222222;
+                font-size: 3rem;
+                @include font-medium;
+                line-height: 3.6rem;
+                margin-bottom: 1.8rem;
+            }
+            .form-row{
+                gap: 0 2.4rem;
+            }
+            .form-group {
+                margin-bottom: 2.4rem;
+
+                label {
+                    color: #222222;
+                    display: block;
+                    font-size: 1.4rem;
+                    @include font-semibold;
+                    line-height: 1.7rem;
+                    margin-bottom: .8rem;
+
+                    .required {
+                        color: #df0202;
+                    }
+                }
+
+                input {
+                    background-color: #fff;
+                    border: .1rem solid #CCCCCC;
+                    border-radius: .4rem;
+                    color: #000;
+                    font-size: 1.4rem;
+                    height: 4.2rem;
+                    padding: 0 1.2rem;
+                    width: 100%;
+
+                    &:focus {
+                        border-color: #000;
+                        outline: none;
+                    }
+                }
+            }
+
+            .form-checkbox {
+                align-items: center;
+                display: flex;
+                gap: 0 .8rem;
+                margin-bottom: 2.5rem;
+
+                input[type="checkbox"] {
+                    cursor: pointer;
+                    height: 1.2rem;
+                    width: 1.2rem;
+                }
+
+                label {
+                    color: #222222;
+                    cursor: pointer;
+                    font-size: 1.4rem;
+                    @include font-semibold;
+                    line-height: 2.2rem;
+                }
+            }
+
+            .submit-btn {
+                background-color: #39B54A;
+                border: none;
+                border-radius: .4rem;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1.5rem;
+                @include font-semibold;
+                height: 4.4rem;
+                line-height: 1.8rem;
+                padding: 1.3rem 2.1rem;
+            }
+
+            .forgot-password {
+                color: #ED7520;
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.7rem;
+                text-align: left;
+                border-bottom: .1rem solid #ED7520;
+                padding-bottom: .1rem;
+                width: max-content;
+            }
+        }
+
+        .register-form {
+            .privacy-text {
+                color: #434343;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 2.4rem;
+                margin-bottom: 1.8rem;
+
+                a {
+                    color: #ED7520;
+                    text-decoration: none;
+                    display: inline;
+                    margin-inline:.2rem;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

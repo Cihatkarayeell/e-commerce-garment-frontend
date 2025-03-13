@@ -6,6 +6,7 @@
 @use "config/base";
 @use "config/helper";
 @use "config/media-query";
+@use "config/reset";
 
 // Import vendors
 @use "vendors";
@@ -38,3 +39,14 @@
 @use "component/references";
 @use "component/breadcrumb";
 @use "component/blog";
+@use "component/product-category";
+@use "component/product-detail";
+@use "component/product-detail-info";
+@use "component/modal";
+@use "component/related-products";
+@use "component/product-card";
+@use "component/account-form";
+@use "component/hero";
+@use "component/sss";
+@use "component/contrat-text";
+@use "component/contact-section";

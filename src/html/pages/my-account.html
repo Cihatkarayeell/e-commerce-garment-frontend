@@ -1,0 +1,80 @@
+{% extends "layout/layout-general.html" %}
+
+{% block content %}
+<div class="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <span>
+                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.860085 6.90625L2.76918 3.82386H4.19602V3.9233L2.1875 6.90625H0.860085ZM0.860085 0.801136H2.1875L4.19602 3.78409V3.88352H2.76918L0.860085 0.801136ZM3.66406 6.90625L5.57315 3.82386H7V3.9233L4.99148 6.90625H3.66406ZM3.66406 0.801136H4.99148L7 3.78409V3.88352H5.57315L3.66406 0.801136Z" fill="#CCCCCC"/>
+                </svg>                    
+            </span>
+            <li>Hesabım</li>
+        </ul>
+    </div>
+</div>
+<div class="account-page">
+    <div class="container">
+        <div class="account-form">
+            <h1>Hesabım</h1>
+            <div class="form-grid">
+                <div class="login-form">
+                    <h2>Giriş Yap</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Kullanıcı adı veya e-posta adresi <span class="required">*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Parola <span class="required">*</span></label>
+                            <input type="password" required>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Beni hatırla</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Giriş Yap</button>
+                        <a href="#" class="forgot-password">Parolanızı mı unuttunuz?</a>
+                    </form>
+                </div>
+                <div class="register-form">
+                    <h2>Üye Ol</h2>
+                    <form>
+                        <div class="form-row d-flex align-items-center grid repeat2">
+                            <div class="form-group">
+                                <label>Ad <span class="required">*</span></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Soyad <span class="required">*</span></label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Kullanıcı adı <span class="required">*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-posta adresi <span class="required">*</span></label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Parola <span class="required">*</span></label>
+                            <input type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Parola Tekrarı <span class="required">*</span></label>
+                            <input type="password" required>
+                        </div>
+                        <p class="privacy-text">
+                            Kişisel verileriniz bu web sitesindeki deneyiminizi desteklemek, hesabınıza erişimi yönetmek ve <a href="#">gizlilik ilkesi</a> sayfamızda açıklanan diğer amaçlar için kullanılacaktır.
+                        </p>
+                        <button type="submit" class="submit-btn">Üye Ol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

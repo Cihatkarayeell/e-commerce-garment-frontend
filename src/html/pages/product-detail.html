@@ -1,0 +1,302 @@
+{% extends "layout/layout-general.html" %}
+
+{% block content %}
+<div class="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <span>
+                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.860085 6.90625L2.76918 3.82386H4.19602V3.9233L2.1875 6.90625H0.860085ZM0.860085 0.801136H2.1875L4.19602 3.78409V3.88352H2.76918L0.860085 0.801136ZM3.66406 6.90625L5.57315 3.82386H7V3.9233L4.99148 6.90625H3.66406ZM3.66406 0.801136H4.99148L7 3.78409V3.88352H5.57315L3.66406 0.801136Z" fill="#CCCCCC"/>
+                </svg>                    
+            </span>
+            <li><a href="#">Ürünler</a></li>
+            <span>
+                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.860085 6.90625L2.76918 3.82386H4.19602V3.9233L2.1875 6.90625H0.860085ZM0.860085 0.801136H2.1875L4.19602 3.78409V3.88352H2.76918L0.860085 0.801136ZM3.66406 6.90625L5.57315 3.82386H7V3.9233L4.99148 6.90625H3.66406ZM3.66406 0.801136H4.99148L7 3.78409V3.88352H5.57315L3.66406 0.801136Z" fill="#CCCCCC"/>
+                </svg>                    
+            </span>
+            <li>277112 Pegasus Jack Ex 4 İplik Overlok Ayağı</li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <div class="product-image">
+                    <img src="../../img/products/product-detail.png" alt="277112 Pegasus Jack Ex 4 İplik Overlok Ayağı">
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="product-info">
+                    <div class="indirim-badge">İndirim!</div>
+                    <h1>277112 Pegasus Jack Ex 4 İplik Overlok Ayağı</h1>
+                    <div class="price">
+                        <span class="old-price">185,23₺</span>
+                        <span class="current-price">180,15₺</span>
+                    </div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Beden seç</label>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn active">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label>Perde Eni (cm)</label>
+                                    <div class="select">
+                                        <select>
+                                            <option>99 Cm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label>Perde Boyu (cm)</label>
+                                    <div class="select">
+                                        <select>
+                                            <option>99 Cm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <label>Sipariş Notu:</label>
+                            <textarea placeholder="Sipariş ilgili notunuzu bu alana yazabilirsiniz"></textarea>
+                        </div>
+                        <div class="stock-info">
+                            <span class="stock-icon">✓</span>
+                            <span>Stokta</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <input type="number" value="1" min="1">
+                                <div class="buttons-grid">
+                                    <button class="quantity-btn plus">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 10L8 6L4 10" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </button>
+                                    <button class="quantity-btn minus disabled">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 6L8 10L12 6" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="add-to-cart-btn">Sepete Ekle</button>
+                        </div>
+                        <div class="shipping-info">
+                            <p>200 TL ve üzeri tüm siparişlerde Ücretsiz Kargo!</p>
+                            <ul>
+                                <li>14 Gün Kolay İade</li>
+                                <li>Aynı gün gönderim için 15:00'dan önce sipariş veriniz.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-detail-info">
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="aciklama">Açıklama</button>
+            <button class="tab-btn" data-tab="degerlendirmeler">Değerlendirmeler <span class="count">0</span></button>
+            <button class="tab-btn" data-tab="soru-cevap">Soru ve Cevap</button>
+        </div>
+        <div class="tab-content active col-9" id="aciklama">
+            <div class="content">
+                <p>277122 Jack ex ve muadili makinalar için 4 iplik overlok ayağı endüstriyel dikiş makinası parçasıdır.</p>
+                <p>Pegasus overlok ex 4 iplik kot ayağı olarak da geçer. M800 Pegasus dikiş makine yedek parçaları dört telli baskı ayağıdır.</p>
+                <p>Pegasus 4 iplik overlok ayağı, çapraz dikiş veya zikzak dikiş için çok geniş bir dikiş dikmek için dikiş makinesinde kullanılan bir ayak türüdür.</p>
+                <p>Overlok ayağında yerleşik bir masura sarıcı vardır. Bu da onu kot pantolon dikmek için mükemmel kılar. Pegasus EX5214-53/333K ve EX5214-53C3/333K için uygundur.</p>
+            </div>
+        </div>
+        <div class="tab-content col-9" id="degerlendirmeler">
+            <div class="content">
+                <p class="no-review">Henüz değerlendirme yapılmadı.</p>
+                <div class="review-form">
+                    <h3>"110-40052 Juki Elektronik Düz Hareketli Bıçak" için yorum yapan ilk kişi siz olun</h3>
+                    <p>E-posta hesabınız yayımlanmayacak. Gerekli alanlar <span class="required">*</span> ile işaretlenmişlerdir</p>
+                    <form>
+                        <div class="form-group">
+                            <label>Derecelendirmeniz</label>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" />
+                                <label for="star5"></label>
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label for="star4"></label>
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label for="star3"></label>
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label for="star2"></label>
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label for="star1"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Değerlendirmeniz <span class="required">*</span></label>
+                            <textarea required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload up to 5 images or videos</label>
+                            <div class="file-upload">
+                                <input type="file" id="file-upload" multiple accept="image/*,video/*" />
+                                <label for="file-upload" class="upload-btn">Dosyaları Seç</label>
+                                <span class="file-info">Dosya seçilmedi</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label>İsim <span class="required">*</span></label>
+                                <input type="text" class="isim-input" required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label>E-posta <span class="required">*</span></label>
+                                <input type="email" class="email-input" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Bir dahaki sefere yorum yaptığımda kullanılmak üzere adımı, e-posta adresimi ve web site adresimi bu tarayıcıya kaydet.
+                            </label>
+                        </div>
+                        <button type="submit" class="submit-btn">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content col-9" id="soru-cevap">
+            <div class="content">
+                <div class="qa-header">
+                    <h2>Soru ve Cevap</h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="Cevap ara" class="search-input">
+                        <button class="search-btn">Soru Sor</button>
+                    </div>
+                </div>
+                <p class="no-questions">Henüz soru sorulmadı</p>
+            </div>
+        </div>
+    </div>
+    <div class="product-info-row">
+        <div class="d-flex align-items-center">
+            <div class="info-row">
+                <div class="info-label">Stok kodu:</div>
+                <div class="info-value">110-40052</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Kategoriler:</div>
+                <div class="info-value"><a href="#">Dikiş Makinesi Bıçakları</a></div>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Marka:</div>
+            <div class="info-value">Gebb</div>
+        </div>
+    </div>
+</div>
+<section class="related-products">
+    <div class="container">
+        <h2>İlgili ürünler</h2>
+        <div class="products-row grid repeat4">
+            <a href="#" class="product-card">
+                <div class="discount-badge">-1%</div>
+                <div class="product-image">
+                    <img src="../../img/products/urun-1.png" alt="P2446 Siruba Etek Reçme Ayağı 5.6 mm">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">277112 Ex Tipi Kot Overlok Ayağı</h3>
+                    <div class="product-price">
+                        <span class="old-price">319.63₺</span>
+                        <span class="current-price">315.27₺</span>
+                    </div>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="discount-badge">-1%</div>
+                <div class="product-image">
+                    <img src="../../img/products/urun-1.png" alt="P2446 Siruba Etek Reçme Ayağı 5.6 mm">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">277112 Ex Tipi Kot Overlok Ayağı</h3>
+                    <div class="product-price">
+                        <span class="price">315.27₺</span>
+                    </div>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="discount-badge">-1%</div>
+                <div class="product-image">
+                    <img src="../../img/products/urun-1.png" alt="P2446 Siruba Etek Reçme Ayağı 5.6 mm">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">277112 Ex Tipi Kot Overlok Ayağı</h3>
+                    <div class="product-price">
+                        <span class="old-price">319.63₺</span>
+                        <span class="current-price">315.27₺</span>
+                    </div>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="discount-badge">-1%</div>
+                <div class="product-image">
+                    <img src="../../img/products/urun-1.png" alt="P2446 Siruba Etek Reçme Ayağı 5.6 mm">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">277112 Ex Tipi Kot Overlok Ayağı</h3>
+                    <div class="product-price">
+                        <span class="price">315.27₺</span>
+                    </div>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Soru Sor Modal -->
+<div class="qa-modal" id="qaModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Soru Sor</h2>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p class="modal-description">Sorunuz bir mağaza temsilcisi veya diğer müşteriler tarafından cevaplanacaktır.</p>
+            <form id="questionForm">
+                <div class="form-group">
+                    <textarea placeholder="Sorunuza" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="isim-input" type="text" placeholder="İsminiz" required>
+                </div>
+                <div class="form-group">
+                    <input class="email-input" type="email" placeholder="E-posta adresiniz" required>
+                </div>
+                <button type="submit" class="submit-btn">Gönder</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

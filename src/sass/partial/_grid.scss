@@ -25,6 +25,21 @@
   display: flex;
   flex-wrap: wrap;
 }
+.grid{
+  display: grid;
+  &.repeat2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &.repeat3{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &.repeat4{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &.repeat5{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 
 .col {
   position: relative;

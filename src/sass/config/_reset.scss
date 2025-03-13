@@ -1,0 +1,145 @@
+
+// Modern CSS Reset
+
+// Box sizing kuralları
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// HTML ve body reset
+html {
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Medya elementleri için reset
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+// Form elementleri için reset
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+// Button reset
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+// Liste reset
+ul,
+ol {
+    list-style: none;
+}
+
+// Link reset
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+// Başlık reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+// Tablo reset
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Form elementleri için ek reset
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// Textarea reset
+textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+// Select reset
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+// Placeholder reset
+::placeholder {
+    opacity: 1;
+}
+
+// Focus outline reset
+:focus {
+    outline: none;
+}
+
+// Smooth scrolling için reset
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// Touch device optimization
+@media (hover: none) {
+    * {
+        cursor: default !important;
+    }
+}

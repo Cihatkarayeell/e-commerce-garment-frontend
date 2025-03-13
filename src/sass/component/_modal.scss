@@ -1,0 +1,113 @@
+@use "../config/fonts" as *;
+
+.qa-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        width: 100%;
+        max-width: 54rem;
+        border-radius: 1.6rem;
+        position: relative;
+        padding: 3.2rem;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+        h2 {
+            font-size: 2.4rem;
+            @include font-semibold;
+            color: #000;
+        }
+
+        .close-btn {
+            font-size: 2.8rem;
+            color: #666;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            line-height: 1;
+        }
+    }
+
+    .modal-description {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        color: #434343;
+        margin-bottom: 2.4rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.6rem;
+
+        textarea {
+            width: 100%;
+            height: 12rem;
+            padding: 1.2rem;
+            border: 1px solid #F9F9F9;
+            border-radius: 1.6rem;
+            background-color: #F9F9F9;
+            font-size: 1.4rem;
+            resize: none;
+
+            &:focus {
+                border-color: #000;
+                outline: none;
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 4.4rem;
+            padding: 0 1.6rem;
+            border: 1px solid #F9F9F9;
+            border-radius: 1.6rem;
+            background-color: #F9F9F9;
+            font-size: 1.4rem;
+
+            &:focus {
+                border-color: #000;
+                outline: none;
+            }
+        }
+    }
+
+    .submit-btn {
+        width: max-content;
+        margin-inline: auto;
+        padding: 0 3.4rem;
+        height: 5.4rem;
+        background-color: #18B394;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        border-radius: 1.6rem;
+        @include font-medium;
+        cursor: pointer;
+        display: block;
+        margin-top: 2.5rem;
+        transition: all 0.3s ease;
+    }
+}

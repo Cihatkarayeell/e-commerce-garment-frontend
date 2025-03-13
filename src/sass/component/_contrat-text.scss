@@ -1,0 +1,23 @@
+@use "../config/fonts" as *;
+
+.contrat-text{
+    width: 100%;
+    padding-top: 1.5rem;
+    margin-bottom: 10.8rem;
+    .text-container{
+        max-width: 80%;
+        width: 100%;
+        h1{
+            color: #434343;
+            margin-bottom: 1.5rem;
+        }
+        h2,span,p,li{
+            font-size: 1.5rem;
+            line-height: 3rem;
+            color: #434343;
+            @include font-regular;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

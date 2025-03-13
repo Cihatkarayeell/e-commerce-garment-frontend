@@ -8,6 +8,12 @@ import './partial/format-tel-link';
 import './partial/protect-image';
 import './partial/responsive-table';
 import './partial/watermark';
+import './partial/size-options';
+import './partial/quantity-buttons';
+import './partial/product-tabs';
+import './partial/qa-modal';
+import './partial/review-form';
+import './partial/sss';
 
 import './utilities/dom';
 import './utilities/fade-out';

@@ -1,0 +1,11 @@
+@use "../config/fonts" as *;
+
+.related-products{
+    width: 100%;
+    padding-top: 6.5rem;
+    padding-bottom: 5rem;
+    h2{
+        margin-bottom: 3rem;
+        @include font-medium;
+    }
+}

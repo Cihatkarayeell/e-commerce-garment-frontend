@@ -17,8 +17,13 @@
 }
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
     gap: 0 2.4rem; 
+    &.repeat4{
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    &.repeat3{
+        grid-template-columns: repeat(3, 1fr); 
+    }
     .product-card {
         background: #FFFFFF;
         padding: 1.6rem;
