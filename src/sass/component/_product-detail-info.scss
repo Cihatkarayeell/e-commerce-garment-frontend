@@ -1,6 +1,7 @@
 @use "../config/fonts" as *;
 @use "../config/functions" as *;
 @use "../config/mixins" as *;
+@use "../config/media-query" as *;
 
 .product-detail-info {
     padding: 4rem 0;
@@ -22,6 +23,10 @@
             align-items: center;
             &:hover {
                 opacity: 1;
+            }
+            @include sm{
+                font-size: 1.4rem;
+                line-height: 2.2rem;
             }
 
             &.active {
@@ -56,6 +61,10 @@
     .tab-content {
         display: none;
         margin-inline: auto;
+        @include sm{
+            max-width: 100%;
+            flex:1;
+        }
         &.active {
             display: block;
         }
@@ -76,6 +85,9 @@
                     text-align: left;
                     margin-bottom: 2.4rem;
                 }
+                @include sm{
+                    text-align: center;
+                }
             }
 
             .review-form {
@@ -93,7 +105,7 @@
                     line-height: 2.3rem;
                     color: #434343;
                     margin-bottom: 2.4rem;
-
+                    text-align: left;
                     .required {
                         color: #df0202;
                         margin-inline: .5rem;
@@ -192,9 +204,14 @@
                 }
 
                 .form-row {
-                    display: flex;
+                    display: grid;
                     gap: 2rem;
                     margin-bottom: 2rem;
+                    grid-template-columns: repeat(2, 1fr);
+                    @include sm{
+                        grid-template-columns: 1fr;
+                        gap: 0;
+                    }
                 }
 
                 .isim-input,
@@ -350,12 +367,22 @@
         align-items: center;
         justify-content: center;
         margin-top: 5rem;
+        @include sm{
+            margin: inline 3rem;
+            > div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
         .info-row{
             width: max-content;
             display: flex;
             align-items: center;
             gap: 0 .9rem;
             margin-inline: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
             .info-label{
                 font-size: 1.4rem;
                 line-height: 2.4rem;

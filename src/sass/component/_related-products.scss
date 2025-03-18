@@ -1,4 +1,5 @@
 @use "../config/fonts" as *;
+@use "../config/media-query" as *;
 
 .related-products{
     width: 100%;
@@ -7,5 +8,10 @@
     h2{
         margin-bottom: 3rem;
         @include font-medium;
+    }
+    @include sm{
+        .grid.repeat4{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }

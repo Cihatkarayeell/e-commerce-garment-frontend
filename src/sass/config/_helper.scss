@@ -1,3 +1,4 @@
+@use "../config/variables" as *;
 // Helper classes
 .text {
   &-center { text-align: center; }
@@ -227,6 +228,9 @@ $indent-step: 0.5;
   border-radius: 50%;
 }
 
+.border{
+  border: $border;;
+}
 /* ==========  Tables  ========== */
 .table-fixed {
   table-layout: fixed;

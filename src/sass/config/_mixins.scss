@@ -1,27 +1,27 @@
-// Breakpoint mixins
-@mixin sm {
-    @media (min-width: $breakpoint-sm) {
-        @content;
-    }
-}
+// // Breakpoint mixins
+// @mixin sm {
+//     @media (min-width: $breakpoint-sm) {
+//         @content;
+//     }
+// }
 
-@mixin md {
-    @media (min-width: $breakpoint-md) {
-        @content;
-    }
-}
+// @mixin md {
+//     @media (min-width: $breakpoint-md) {
+//         @content;
+//     }
+// }
 
-@mixin lg {
-    @media (min-width: $breakpoint-lg) {
-        @content;
-    }
-}
+// @mixin lg {
+//     @media (min-width: $breakpoint-lg) {
+//         @content;
+//     }
+// }
 
-@mixin xl {
-    @media (min-width: $breakpoint-xl) {
-        @content;
-    }
-}
+// @mixin xl {
+//     @media (min-width: $breakpoint-xl) {
+//         @content;
+//     }
+// }
 
 // Flexbox mixins
 @mixin flex($direction: row, $justify: flex-start, $align: stretch) {

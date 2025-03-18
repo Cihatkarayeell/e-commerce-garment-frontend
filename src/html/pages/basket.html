@@ -1,0 +1,225 @@
+{% extends "layout/layout-general.html" %}
+
+{% block content %}
+<section class="basket">
+    <div class="container">
+        <div class="basket-steps one">
+            <div class="step active">
+                <span class="step-number">1</span>
+                <span class="step-text">Alışveriş Sepetim</span>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <span class="step-text">Kargo ve Fatura Bilgileri</span>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <span class="step-text">Siparişi Onayla</span>
+            </div>
+        </div>
+        <div class="d-flex basket-container">
+            <div class="basket-content">
+                <div class="basket-items">
+                    <div class="basket-item">
+                        <button class="item-delete">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.375 2.5C4.375 2.16848 4.5067 1.85054 4.74112 1.61612C4.97554 1.3817 5.29348 1.25 5.625 1.25H9.375C9.70652 1.25 10.0245 1.3817 10.2589 1.61612C10.4933 1.85054 10.625 2.16848 10.625 2.5V3.75H13.125C13.2908 3.75 13.4497 3.81585 13.5669 3.93306C13.6842 4.05027 13.75 4.20924 13.75 4.375C13.75 4.54076 13.6842 4.69973 13.5669 4.81694C13.4497 4.93415 13.2908 5 13.125 5H12.4569L11.915 12.5887C11.8926 12.9041 11.7514 13.1993 11.5201 13.4147C11.2887 13.6302 10.9843 13.75 10.6681 13.75H4.33125C4.01509 13.75 3.71067 13.6302 3.4793 13.4147C3.24794 13.1993 3.10682 12.9041 3.08437 12.5887L2.54375 5H1.875C1.70924 5 1.55027 4.93415 1.43306 4.81694C1.31585 4.69973 1.25 4.54076 1.25 4.375C1.25 4.20924 1.31585 4.05027 1.43306 3.93306C1.55027 3.81585 1.70924 3.75 1.875 3.75H4.375V2.5ZM5.625 3.75H9.375V2.5H5.625V3.75ZM3.79625 5L4.33188 12.5H10.6687L11.2044 5H3.79625ZM6.25 6.25C6.41576 6.25 6.57473 6.31585 6.69194 6.43306C6.80915 6.55027 6.875 6.70924 6.875 6.875V10.625C6.875 10.7908 6.80915 10.9497 6.69194 11.0669C6.57473 11.1842 6.41576 11.25 6.25 11.25C6.08424 11.25 5.92527 11.1842 5.80806 11.0669C5.69085 10.9497 5.625 10.7908 5.625 10.625V6.875C5.625 6.70924 5.69085 6.55027 5.80806 6.43306C5.92527 6.31585 6.08424 6.25 6.25 6.25ZM8.75 6.25C8.91576 6.25 9.07473 6.31585 9.19194 6.43306C9.30915 6.55027 9.375 6.70924 9.375 6.875V10.625C9.375 10.7908 9.30915 10.9497 9.19194 11.0669C9.07473 11.1842 8.91576 11.25 8.75 11.25C8.58424 11.25 8.42527 11.1842 8.30806 11.0669C8.19085 10.9497 8.125 10.7908 8.125 10.625V6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25Z" fill="#CCCCCC"/>
+                            </svg>                            
+                        </button>
+                        <div class="item-image">
+                            <img src="../../img/products/product-9.png" alt="Product">
+                        </div>
+                        <div class="d-flex mobile-view align-items-center w-100">
+                            <h3>110-40052 Juki Elektronik Düz Hareketli Bıçak</h3>
+                            <div class="item-details">
+                                <span class="mobile-text">Miktar:</span>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="99">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <span class="mobile-text">Ara Toplam</span>
+                                <span class="price">100,17₺</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-item">
+                        <button class="item-delete">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.375 2.5C4.375 2.16848 4.5067 1.85054 4.74112 1.61612C4.97554 1.3817 5.29348 1.25 5.625 1.25H9.375C9.70652 1.25 10.0245 1.3817 10.2589 1.61612C10.4933 1.85054 10.625 2.16848 10.625 2.5V3.75H13.125C13.2908 3.75 13.4497 3.81585 13.5669 3.93306C13.6842 4.05027 13.75 4.20924 13.75 4.375C13.75 4.54076 13.6842 4.69973 13.5669 4.81694C13.4497 4.93415 13.2908 5 13.125 5H12.4569L11.915 12.5887C11.8926 12.9041 11.7514 13.1993 11.5201 13.4147C11.2887 13.6302 10.9843 13.75 10.6681 13.75H4.33125C4.01509 13.75 3.71067 13.6302 3.4793 13.4147C3.24794 13.1993 3.10682 12.9041 3.08437 12.5887L2.54375 5H1.875C1.70924 5 1.55027 4.93415 1.43306 4.81694C1.31585 4.69973 1.25 4.54076 1.25 4.375C1.25 4.20924 1.31585 4.05027 1.43306 3.93306C1.55027 3.81585 1.70924 3.75 1.875 3.75H4.375V2.5ZM5.625 3.75H9.375V2.5H5.625V3.75ZM3.79625 5L4.33188 12.5H10.6687L11.2044 5H3.79625ZM6.25 6.25C6.41576 6.25 6.57473 6.31585 6.69194 6.43306C6.80915 6.55027 6.875 6.70924 6.875 6.875V10.625C6.875 10.7908 6.80915 10.9497 6.69194 11.0669C6.57473 11.1842 6.41576 11.25 6.25 11.25C6.08424 11.25 5.92527 11.1842 5.80806 11.0669C5.69085 10.9497 5.625 10.7908 5.625 10.625V6.875C5.625 6.70924 5.69085 6.55027 5.80806 6.43306C5.92527 6.31585 6.08424 6.25 6.25 6.25ZM8.75 6.25C8.91576 6.25 9.07473 6.31585 9.19194 6.43306C9.30915 6.55027 9.375 6.70924 9.375 6.875V10.625C9.375 10.7908 9.30915 10.9497 9.19194 11.0669C9.07473 11.1842 8.91576 11.25 8.75 11.25C8.58424 11.25 8.42527 11.1842 8.30806 11.0669C8.19085 10.9497 8.125 10.7908 8.125 10.625V6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25Z" fill="#CCCCCC"/>
+                            </svg>                            
+                        </button>
+                        <div class="item-image">
+                            <img src="../../img/products/product-9.png" alt="Product">
+                        </div>
+                        <div class="d-flex mobile-view align-items-center w-100">
+                            <h3>110-40052 Juki Elektronik Düz Hareketli Bıçak</h3>
+                            <div class="item-details">
+                                <span class="mobile-text">Miktar:</span>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="99">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <span class="mobile-text">Ara Toplam</span>
+                                <span class="price">100,17₺</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-item">
+                        <button class="item-delete">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.375 2.5C4.375 2.16848 4.5067 1.85054 4.74112 1.61612C4.97554 1.3817 5.29348 1.25 5.625 1.25H9.375C9.70652 1.25 10.0245 1.3817 10.2589 1.61612C10.4933 1.85054 10.625 2.16848 10.625 2.5V3.75H13.125C13.2908 3.75 13.4497 3.81585 13.5669 3.93306C13.6842 4.05027 13.75 4.20924 13.75 4.375C13.75 4.54076 13.6842 4.69973 13.5669 4.81694C13.4497 4.93415 13.2908 5 13.125 5H12.4569L11.915 12.5887C11.8926 12.9041 11.7514 13.1993 11.5201 13.4147C11.2887 13.6302 10.9843 13.75 10.6681 13.75H4.33125C4.01509 13.75 3.71067 13.6302 3.4793 13.4147C3.24794 13.1993 3.10682 12.9041 3.08437 12.5887L2.54375 5H1.875C1.70924 5 1.55027 4.93415 1.43306 4.81694C1.31585 4.69973 1.25 4.54076 1.25 4.375C1.25 4.20924 1.31585 4.05027 1.43306 3.93306C1.55027 3.81585 1.70924 3.75 1.875 3.75H4.375V2.5ZM5.625 3.75H9.375V2.5H5.625V3.75ZM3.79625 5L4.33188 12.5H10.6687L11.2044 5H3.79625ZM6.25 6.25C6.41576 6.25 6.57473 6.31585 6.69194 6.43306C6.80915 6.55027 6.875 6.70924 6.875 6.875V10.625C6.875 10.7908 6.80915 10.9497 6.69194 11.0669C6.57473 11.1842 6.41576 11.25 6.25 11.25C6.08424 11.25 5.92527 11.1842 5.80806 11.0669C5.69085 10.9497 5.625 10.7908 5.625 10.625V6.875C5.625 6.70924 5.69085 6.55027 5.80806 6.43306C5.92527 6.31585 6.08424 6.25 6.25 6.25ZM8.75 6.25C8.91576 6.25 9.07473 6.31585 9.19194 6.43306C9.30915 6.55027 9.375 6.70924 9.375 6.875V10.625C9.375 10.7908 9.30915 10.9497 9.19194 11.0669C9.07473 11.1842 8.91576 11.25 8.75 11.25C8.58424 11.25 8.42527 11.1842 8.30806 11.0669C8.19085 10.9497 8.125 10.7908 8.125 10.625V6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25Z" fill="#CCCCCC"/>
+                            </svg>                            
+                        </button>
+                        <div class="item-image">
+                            <img src="../../img/products/product-9.png" alt="Product">
+                        </div>
+                        <div class="d-flex mobile-view align-items-center w-100">
+                            <h3>110-40052 Juki Elektronik Düz Hareketli Bıçak</h3>
+                            <div class="item-details">
+                                <span class="mobile-text">Miktar:</span>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="99">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <span class="mobile-text">Ara Toplam</span>
+                                <span class="price">100,17₺</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-item">
+                        <button class="item-delete">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.375 2.5C4.375 2.16848 4.5067 1.85054 4.74112 1.61612C4.97554 1.3817 5.29348 1.25 5.625 1.25H9.375C9.70652 1.25 10.0245 1.3817 10.2589 1.61612C10.4933 1.85054 10.625 2.16848 10.625 2.5V3.75H13.125C13.2908 3.75 13.4497 3.81585 13.5669 3.93306C13.6842 4.05027 13.75 4.20924 13.75 4.375C13.75 4.54076 13.6842 4.69973 13.5669 4.81694C13.4497 4.93415 13.2908 5 13.125 5H12.4569L11.915 12.5887C11.8926 12.9041 11.7514 13.1993 11.5201 13.4147C11.2887 13.6302 10.9843 13.75 10.6681 13.75H4.33125C4.01509 13.75 3.71067 13.6302 3.4793 13.4147C3.24794 13.1993 3.10682 12.9041 3.08437 12.5887L2.54375 5H1.875C1.70924 5 1.55027 4.93415 1.43306 4.81694C1.31585 4.69973 1.25 4.54076 1.25 4.375C1.25 4.20924 1.31585 4.05027 1.43306 3.93306C1.55027 3.81585 1.70924 3.75 1.875 3.75H4.375V2.5ZM5.625 3.75H9.375V2.5H5.625V3.75ZM3.79625 5L4.33188 12.5H10.6687L11.2044 5H3.79625ZM6.25 6.25C6.41576 6.25 6.57473 6.31585 6.69194 6.43306C6.80915 6.55027 6.875 6.70924 6.875 6.875V10.625C6.875 10.7908 6.80915 10.9497 6.69194 11.0669C6.57473 11.1842 6.41576 11.25 6.25 11.25C6.08424 11.25 5.92527 11.1842 5.80806 11.0669C5.69085 10.9497 5.625 10.7908 5.625 10.625V6.875C5.625 6.70924 5.69085 6.55027 5.80806 6.43306C5.92527 6.31585 6.08424 6.25 6.25 6.25ZM8.75 6.25C8.91576 6.25 9.07473 6.31585 9.19194 6.43306C9.30915 6.55027 9.375 6.70924 9.375 6.875V10.625C9.375 10.7908 9.30915 10.9497 9.19194 11.0669C9.07473 11.1842 8.91576 11.25 8.75 11.25C8.58424 11.25 8.42527 11.1842 8.30806 11.0669C8.19085 10.9497 8.125 10.7908 8.125 10.625V6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25Z" fill="#CCCCCC"/>
+                            </svg>                            
+                        </button>
+                        <div class="item-image">
+                            <img src="../../img/products/product-9.png" alt="Product">
+                        </div>
+                        <div class="d-flex mobile-view align-items-center w-100">
+                            <h3>110-40052 Juki Elektronik Düz Hareketli Bıçak</h3>
+                            <div class="item-details">
+                                <span class="mobile-text">Miktar:</span>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="99">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <span class="mobile-text">Ara Toplam</span>
+                                <span class="price">100,17₺</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-item">
+                        <button class="item-delete">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.375 2.5C4.375 2.16848 4.5067 1.85054 4.74112 1.61612C4.97554 1.3817 5.29348 1.25 5.625 1.25H9.375C9.70652 1.25 10.0245 1.3817 10.2589 1.61612C10.4933 1.85054 10.625 2.16848 10.625 2.5V3.75H13.125C13.2908 3.75 13.4497 3.81585 13.5669 3.93306C13.6842 4.05027 13.75 4.20924 13.75 4.375C13.75 4.54076 13.6842 4.69973 13.5669 4.81694C13.4497 4.93415 13.2908 5 13.125 5H12.4569L11.915 12.5887C11.8926 12.9041 11.7514 13.1993 11.5201 13.4147C11.2887 13.6302 10.9843 13.75 10.6681 13.75H4.33125C4.01509 13.75 3.71067 13.6302 3.4793 13.4147C3.24794 13.1993 3.10682 12.9041 3.08437 12.5887L2.54375 5H1.875C1.70924 5 1.55027 4.93415 1.43306 4.81694C1.31585 4.69973 1.25 4.54076 1.25 4.375C1.25 4.20924 1.31585 4.05027 1.43306 3.93306C1.55027 3.81585 1.70924 3.75 1.875 3.75H4.375V2.5ZM5.625 3.75H9.375V2.5H5.625V3.75ZM3.79625 5L4.33188 12.5H10.6687L11.2044 5H3.79625ZM6.25 6.25C6.41576 6.25 6.57473 6.31585 6.69194 6.43306C6.80915 6.55027 6.875 6.70924 6.875 6.875V10.625C6.875 10.7908 6.80915 10.9497 6.69194 11.0669C6.57473 11.1842 6.41576 11.25 6.25 11.25C6.08424 11.25 5.92527 11.1842 5.80806 11.0669C5.69085 10.9497 5.625 10.7908 5.625 10.625V6.875C5.625 6.70924 5.69085 6.55027 5.80806 6.43306C5.92527 6.31585 6.08424 6.25 6.25 6.25ZM8.75 6.25C8.91576 6.25 9.07473 6.31585 9.19194 6.43306C9.30915 6.55027 9.375 6.70924 9.375 6.875V10.625C9.375 10.7908 9.30915 10.9497 9.19194 11.0669C9.07473 11.1842 8.91576 11.25 8.75 11.25C8.58424 11.25 8.42527 11.1842 8.30806 11.0669C8.19085 10.9497 8.125 10.7908 8.125 10.625V6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25Z" fill="#CCCCCC"/>
+                            </svg>                            
+                        </button>
+                        <div class="item-image">
+                            <img src="../../img/products/product-9.png" alt="Product">
+                        </div>
+                        <div class="d-flex mobile-view align-items-center w-100">
+                            <h3>110-40052 Juki Elektronik Düz Hareketli Bıçak</h3>
+                            <div class="item-details">
+                                <span class="mobile-text">Miktar:</span>
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="99">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <span class="mobile-text">Ara Toplam</span>
+                                <span class="price">100,17₺</span>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="coupon-section">
+                        <input type="text" placeholder="Kupon Kodu" class="coupon-input">
+                        <button class="coupon-btn">Kupon kullan</button>
+                        <button class="update-basket">Sepeti güncelle</button>
+                    </div>
+                    <span class="coupon-note">Kupon Kodunuz varsa <span class="coupon-note-highlight">‘Kupon Kodu’</span> yazan bölüme giriniz.</span>
+                </div>
+                <div class="en-cok-satan">
+                    <h2>En Çok Satan Ürünler</h2>
+                    <div class="en-cok-satan-grid">
+                        <a href="#" class="en-cok-satan-item">
+                            <div class="item-content">
+                                <h3>S02643 Brother Elektronik Düz Makine Bıçak Sacı</h3>
+                                <div class="item-image">
+                                    <img src="../../img/products/product-9.png" alt="S02643 Brother Elektronik Düz Makine Bıçak Sacı">
+                                </div>
+                            </div>
+                            <div class="price">34,61₺</div>
+                        </a>
+                        <a href="#" class="en-cok-satan-item">
+                            <div class="item-content">
+                                <h3>64041 Brother Reçme Altı Oyuk Ayak</h3>
+                                <div class="item-image">
+                                    <img src="../../img/products/product-4.png" alt="64041 Brother Reçme Altı Oyuk Ayak">
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">284,13₺</span>
+                                <span class="current-price">271,38₺</span>
+                            </div>
+                        </a>
+                        <a href="#" class="en-cok-satan-item">
+                            <div class="item-content">
+                                <h3>Brother 500 Serisi Üst Lüper</h3>
+                                <div class="item-image">
+                                    <img src="../../img/products/product-8.png" alt="Brother 500 Serisi Üst Lüper">
+                                </div>
+                            </div>
+                            <div class="price">138,42₺</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="basket-summary">
+                <div class="summary-details">
+                    <div class="summary-row subtotal">
+                        <span>Ara Toplam</span>
+                        <span>362,08₺</span>
+                    </div>
+                    <div class="summary-row flex-column m-t-4">
+                        <span>Gönderim</span>
+                        <div class="shipping-info">
+                            <span class="shipping-type">Alıcı Ödemeli</span>
+                            <span class="shipping-location">Gönderim hedefi: <span class="shipping-location-highlight">İstanbul</span></span>
+                        </div>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Toplam</span>
+                        <div class="total-amount">
+                            <span class="amount">362,08₺</span>
+                            <span class="tax-info">(60,35₺ KDV (%20) dahil)</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <a href="shipping_invoice.html" class="checkout-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.2202 7.20002H12.6002V5.04002C12.6002 2.43272 11.3987 0.900024 9.0002 0.900024C6.6017 0.900024 5.4002 2.43272 5.4002 5.04002V7.20002H3.6002C3.1025 7.20002 2.7002 7.78142 2.7002 8.27913V15.3C2.7002 15.7941 3.0854 16.3251 3.5561 16.4763L4.6334 16.8246C5.20474 16.9915 5.7952 17.0841 6.3902 17.1H11.6102C12.2049 17.0837 12.7951 16.9908 13.3661 16.8237L14.4425 16.4754C14.9141 16.3251 15.3002 15.7941 15.3002 15.3V8.27913C15.3002 7.78142 14.717 7.20002 14.2202 7.20002ZM10.8002 7.20002H7.2002V4.67912C7.2002 3.37862 7.9175 2.70002 9.0002 2.70002C10.0829 2.70002 10.8002 3.37862 10.8002 4.67912V7.20002Z" fill="white"/>
+                    </svg>    
+                    <span>Ödeme sayfasına git</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

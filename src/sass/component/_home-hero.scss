@@ -1,10 +1,14 @@
 @use "../config/fonts" as *;
+@use "../config/media-query" as * ;
 
 #homeHero.hero{
     width: 100%;
     background-color: #F8F9FB;
     padding: 6rem 0;
     position: relative;
+    @include md{
+        padding: 4rem 0;
+    }
     .hero-content {
         display: flex;
         align-items: center;
@@ -25,6 +29,10 @@
             @include font-semibold;
             margin-bottom: 2.1rem;
             max-width: 50%;
+            @include md{
+                max-width: 100%;
+                font-size: 4.4rem;
+            }
         }
 
         p {
@@ -33,11 +41,16 @@
             color: #493F68;
             @include font-regular;
             margin-bottom: .5rem;
-
+            @include md{
+                font-size: 2rem;;
+            }
             &.warning-text {
                 font-size: 2.4rem;
                 @include font-semibold;
                 margin-bottom: 2.4rem;
+                @include md{
+                    font-size: 2rem;;
+                }
             }
         }
 

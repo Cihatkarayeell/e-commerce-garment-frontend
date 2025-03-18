@@ -1,4 +1,6 @@
 @use "../config/fonts" as *;
+@use "../config/media-query" as *;
+@use "../config/mixins" as *;
 
 .breadcrumb{
     margin-top: 1.4rem;
@@ -15,11 +17,19 @@
                 color: #434343;
                 @include font-medium;
                 text-decoration: none;
+                @include line-clamp(1)
             }
             font-size: 1.4rem;
             line-height: 1.7rem;
             color: #434343;
             @include font-regular;
+            @include line-clamp(1);
+            @include sm{
+                a{
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                }
+            }
         }
     }
 }

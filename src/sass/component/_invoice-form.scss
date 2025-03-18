@@ -1,0 +1,228 @@
+@use "../config/fonts" as *;
+@use "../config/media-query" as *;
+.shipping-invoice {
+    padding: 4rem 0;
+    .divider{
+        width: 100%;
+        background-color: #ECECEC;
+        height: .1rem;
+        margin-bottom: 2rem;
+    }
+    .container {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .invoice-form-container {
+        display: flex;
+        margin-top: 4rem;
+        @include sm{
+            flex-direction: column;
+            gap: 2.4rem 0;
+        }
+    }
+
+    .invoice-form {
+        width: 50%;
+        padding-right: 3rem;
+        @include sm{
+            padding-right: 0;
+            width: 100%;
+        }
+        h2 {
+            font-size: 2.4rem;
+            @include font-semibold;
+            color: #222222;
+            margin-bottom: 3rem;
+            line-height: 1.45rem;
+            margin-top: 1rem;
+        }
+
+        form {
+            .form-row {
+                display: flex;
+                gap: 2rem;
+                margin-bottom: 1.6rem;
+
+                .form-group {
+                    flex: 1;
+                }
+            }
+
+            .form-group {
+                margin-bottom: 1.6rem;
+
+                label {
+                    display: block;
+                    font-size: 1.4rem;
+                    color: #111;
+                    margin-bottom: .5rem;
+                    @include font-semibold;
+                    .required {
+                        color: #ED7520;
+                    }
+                }
+
+                input[type="text"],
+                input[type="name"],
+                input[type="tel"],
+                input[type="email"],
+                input[type="number"],
+                input[type="password"],
+                input[type="search"],
+                input[type="url"],
+                input[type="date"],
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 1.2rem;
+                    border: 1px solid #ddd;
+                    border-radius: .4rem;
+                    font-size: 1.4rem;
+                    color: #222;
+                    background-color: #fff;
+                    transition: all 0.3s ease;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #ED7520;
+                        box-shadow: 0 0 0 2px rgba(237, 117, 32, 0.1);
+                    }
+
+                    &::placeholder {
+                        color: #999;
+                    }
+
+                    &:disabled,
+                    &[readonly] {
+                        background-color: #f5f5f5;
+                        cursor: not-allowed;
+                        opacity: 0.7;
+                    }
+
+                    &:hover:not(:disabled):not([readonly]) {
+                        border-color: #bbb;
+                    }
+                }
+                input{
+                    width: 100%;
+                    padding: 0 .8rem;
+                    height: 4rem;
+                    border: 1px solid #ddd;
+                    border-radius: .4rem;
+                    font-size: 1.4rem;
+                    color: #222;
+                    background-color: #fff;
+                    transition: all 0.3s ease;
+                    border-color: #d2d6dc;
+                    &:focus {
+                        outline: none;
+                        border-color: #999;
+                        box-shadow: 0 0 0 2px rgba(237,117,32,.1)
+                        
+                    }
+
+                    &::placeholder {
+                        color: #999;
+                        font-size: 1.3rem;
+                    }
+
+                    &:disabled,
+                    &[readonly] {
+                        background-color: #f5f5f5;
+                        cursor: not-allowed;
+                        opacity: 0.7;
+                    }
+
+                    &:hover:not(:disabled):not([readonly]) {
+                        border-color: #bbb;
+                    }
+                }
+                select {
+                    appearance: none;
+                    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23222222' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: right 1.2rem center;
+                    padding-right: 3rem;
+
+                    &::-ms-expand {
+                        display: none;
+                    }
+
+                    option {
+                        font-size: 1.4rem;
+                        color: #222;
+                        background-color: #fff;
+                    }
+                }
+
+                textarea {
+                    height: 12rem;
+                    resize: vertical;
+                    min-height: 8rem;
+                    max-height: 20rem;
+                    line-height: 1.5;
+                }
+
+                &.checkbox {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    input[type="checkbox"] {
+                        position: relative;
+                        width: 1.4rem;
+                        height: 1.4rem;
+                        aspect-ratio: 1;
+                        border: 1px solid #ddd;
+                        border-radius: .3rem;
+                        cursor: pointer;
+                        appearance: none;
+                        background-color: #fff;
+                        transition: all 0.3s ease;
+
+                        &:checked {
+                            background-color: #ED7520;
+                            border-color: #ED7520;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%) rotate(45deg);
+                                width: 0.4rem;
+                                height: 0.8rem;
+                                border: solid #fff;
+                                border-width: 0 2px 2px 0;
+                            }
+                        }
+
+                        &:hover:not(:disabled) {
+                            border-color: #bbb;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            border-color: #ED7520;
+                            box-shadow: 0 0 0 2px rgba(237, 117, 32, 0.1);
+                        }
+                    }
+
+                    label {
+                        margin-bottom: 0;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+    }
+    @include sm{
+        .order-summary{
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}

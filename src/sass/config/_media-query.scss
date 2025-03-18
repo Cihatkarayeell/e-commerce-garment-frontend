@@ -1,49 +1,44 @@
+@use "../config/variables" as *;
+
 // Küçük cihazlar
-@mixin mini {
+@mixin xs {
     // 359px ve aşağısı
-    @media (max-width: 359px) {
+    @media (max-width: 375px) {
       @content;
     }
   }
   
   // XSMALL
-  @mixin xs {
-    // 639px ve aşağısı
-    @media (max-width: ($screen-sm - 1px)) {
+  @mixin mini {
+    // 480px ve aşağısı
+    @media (max-width: ($screen-xs)) {
       @content;
     }
   }
   
   //SMALL
   @mixin sm {
-    // 640px ve aşağısı
+    // 768px ve aşağısı
     @media (max-width: $screen-sm) {
       @content;
     }
   }
   
   @mixin bigger-than-sm {
-    // 640px ve yukarısı
+    //768px ve yukarısı
     @media (min-width: $screen-sm) {
       @content;
     }
   }
   
   @mixin sm-md {
-    // 640px ile 1023px arası
+    // 768px ile 1024px arası
     @media (min-width: $screen-sm) and (max-width: ($screen-md - 1px)) {
       @content;
     }
   }
   
-  //MEDIUM
-  @mixin smaller-than-md {
-    // 1023px ve aşağısı
-    @media (max-width: ($screen-md - 1px)) {
-      @content;
-    }
-  }
-  
+  //MEDIUM  
   @mixin bigger-than-md {
     // 1024px ve yukarısı
     @media (min-width: $screen-md) {
@@ -59,58 +54,44 @@
   }
   
   @mixin md-lg {
-    // 1024px ile 1365px arası
+    // 1024px ile 1140px arası
     @media (min-width: $screen-md) and (max-width: ($screen-lg - 1px)) {
       @content;
     }
   }
   
-  //LARGE
-  @mixin smaller-than-lg {
-    // 1365px ve aşağısı
-    @media (max-width: ($screen-lg - 1px)) {
-      @content;
-    }
-  }
-  
+  //LARGE  
   @mixin bigger-than-lg {
-    // 1366px ve yukarısı
+    // 1140px ve yukarısı
     @media (min-width: $screen-lg) {
       @content;
     }
   }
   
   @mixin lg {
-    // 1366px ve aşağısı
+    // 1140px ve aşağısı
     @media (max-width: $screen-lg) {
       @content;
     }
   }
   
   @mixin lg-xl {
-    // 1366px ile 1679px arası
+    // 1140px ile 1439px arası
     @media (min-width: $screen-lg) and (max-width: ($screen-xl - 1px)) {
       @content;
     }
   }
   
   //XLARGE
-  @mixin smaller-than-xl {
-    // 1679px ve aşağısı
-    @media (max-width: ($screen-xl - 1px)) {
-      @content;
-    }
-  }
-  
   @mixin bigger-than-xl {
-    // 1680px ve yukarısı
+    // 1440px ve yukarısı
     @media (min-width: $screen-xl) {
       @content;
     }
   }
   
   @mixin xl {
-    // 1680px ve aşağısı
+    // 1440px ve aşağısı
     @media (max-width: $screen-xl) {
       @content;
     }

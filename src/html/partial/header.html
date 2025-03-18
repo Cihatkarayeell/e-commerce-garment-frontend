@@ -6,10 +6,16 @@
 </div>
 
 <!-- Main Header -->
-<header class="main-header">
+<header class="main-header" id="header">
     <div class="container">
         <div class="header-content">
             <!-- Logo -->
+             <div class="menu-toggle">
+                <div class="icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                </div>
+                <span>Menu</span>
+             </div>
             <div class="logo">
                 <a href="/">
                     <img src="../../img/logo/brand-logo/header-brand-logo.jpg" alt="GEBB Logo">
@@ -28,19 +34,66 @@
 
             <!-- User Actions -->
             <div class="user-actions">
-                <a href="/hesabim" class="action-item">
+                <a href="my-account.html" class="action-item profile">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#434343"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                     <span>Hesabım</span>
                 </a>
-                <a href="/sss" class="action-item">
+                <a href="sss.html" class="action-item">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#434343"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-question-mark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" /><path d="M12 19l0 .01" /></svg>
                     <span>S.S.S</span>
                 </a>
-                <a href="/siparis" class="action-item">
+                <a href="basket.html" class="action-item">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#434343"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
                     <span>Sipariş</span>
                 </a>
             </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="close-menu">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="#fff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            </div>
+            <nav class="mobile-menu-content">
+                <ul>
+                    <li><a href="/masuralar">Anasayfa</a></li>
+                    <li><a href="/plakalar">Blog</a></li>
+                    <li><a href="/liperler">Ürünler</a></li>
+                    <li><a href="/ayaklar">Bıçaklar</a></li>
+                    <li><a href="/igneler">İğneler</a></li>
+                    <li><a href="/igneler">Lüperler</a></li>
+                    <li><a href="/igneler">Ayaklar</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="title">
+                    <p>Gözat</p>
+                </div>
+                <ul class="browse-menu">
+                    <li><a href="/masuralar">Hesabım</a></li>
+                    <li><a href="/plakalar">Siparişlerim</a></li>
+                    <li><a href="/liperler">Beğendiklerim</a></li>
+                    <li><a href="/ayaklar">Sık Sorulan Sorular</a></li>
+                    <li><a href="/igneler">İletişime Geç</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="title">
+                    <p>Whatsapp</p>
+                </div>
+                <ul class="browse-menu">
+                    <li><a href="tel:+905377054153">+90 537 705 4153</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="title">
+                    <p>Sosyal Medya</p>
+                </div>
+                <ul class="browse-menu">
+                    <li><a href="/masuralar">Facebook</a></li>
+                    <li><a href="/plakalar">Twitter</a></li>
+                    <li><a href="/liperler">Instagram</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
@@ -49,13 +102,13 @@
 <nav class="main-nav">
     <div class="container d-flex align-items-center">
         <ul class="nav-list d-flex align-items-center">
-            <li><a href="/anasayfa">Anasayfa</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/urunler">Ürünler</a></li>
-            <li><a href="/bicaklar">Bıçaklar</a></li>
-            <li><a href="/igneler">İğneler</a></li>
-            <li><a href="/liperler">Liperler</a></li>
-            <li><a href="/ayaklar">Ayaklar</a></li>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="product-category.html">Ürünler</a></li>
+            <li><a href="product-category.html">Bıçaklar</a></li>
+            <li><a href="product-category.html">İğneler</a></li>
+            <li><a href="product-category.html">Liperler</a></li>
+            <li><a href="product-category.html">Ayaklar</a></li>
         </ul>
         <div class="cart">
             <a href="/sepet">
@@ -73,7 +126,7 @@
 
 <!-- Notification Bar -->
 <div class="notification-bar">
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-center">
         <p>Ürününden önce ölçü alıp makinanıza parçalanma mı ihtiyacınız var? Doğru adrestesiniz.</p>
     </div>
 </div>

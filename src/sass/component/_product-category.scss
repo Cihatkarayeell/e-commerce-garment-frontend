@@ -1,8 +1,11 @@
 @use "../config/fonts" as *;
-
+@use "../config/media-query" as *;
 .category-text{
     margin-bottom: 5rem;
     margin-top: 14rem;
+    @include md{
+        margin-top: 6rem;
+    }
     h2{
         font-size: 3rem;
         line-height: 3.6rem;
@@ -19,5 +22,27 @@
         &:last-child{
             margin-bottom: 0;
         }
+    }
+}
+.category-row{
+    @include md{
+        flex-direction: column-reverse;
+        display: flex;
+        .most-sales{
+            width: 100%;
+            max-width: 100%;
+            margin-left: 0;
+            margin-top: 3rem;
+        }
+    }
+    @include sm{
+        .products-grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+.category-grid{
+    @include md{
+        max-width: 100%;
     }
 }

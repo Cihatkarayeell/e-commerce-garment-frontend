@@ -1,9 +1,12 @@
 @use "../config/fonts" as *;
-
+@use "../config/media-query" as *;
 .account-page {
     width: 100%;
     padding-top: 1.5rem;
     margin-bottom: 12rem;
+    @include md{
+        margin-bottom: 6rem;
+    }
     .account-form {
         width: 100%;
 
@@ -19,11 +22,18 @@
             gap: 0 6.9rem;
             align-items: flex-start;
             justify-content: space-between;
+            @include sm{
+                flex-direction: column;
+                gap: 3.6rem 0;
+            }
         }
 
         .login-form{
             max-width: 48.2rem;
             width: 100%;
+            @include sm{
+                max-width: 100%;
+            }
             .submit-btn{
                 margin-bottom: 4rem;
             }
@@ -31,6 +41,9 @@
         .register-form{
             max-width: 61.8rem;
             width: 100%;
+            @include sm{
+                max-width: 100%;
+            }
         }
         .login-form,
         .register-form {

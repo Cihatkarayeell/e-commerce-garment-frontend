@@ -1,3 +1,4 @@
+@use "../config/media-query" as *;
 // Container component styles
 .container {
     max-width: 117rem;
@@ -27,5 +28,8 @@
 
     &--narrow {
         max-width: 800px;
+    }
+    @include xl{
+        padding-inline: 2rem;
     }
 }

@@ -14,6 +14,10 @@ import './partial/product-tabs';
 import './partial/qa-modal';
 import './partial/review-form';
 import './partial/sss';
+import './partial/basket-quantity';
+import './partial/sliding-cart';
+import './partial/header';
+import './partial/swiper';
 
 import './utilities/dom';
 import './utilities/fade-out';
@@ -25,6 +29,9 @@ import './utilities/smooth-scroll';
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize basket quantity controls
+    // initBasketQuantityControls();
+    
     // Log initialization
     console.log('Webpack Frontend Starter Kit loaded!');
     
@@ -59,3 +66,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
