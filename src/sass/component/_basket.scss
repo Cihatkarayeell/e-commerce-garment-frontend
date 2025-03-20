@@ -112,7 +112,9 @@
             margin-top: 6.6rem;
         }
     }
-
+    .basket-container{
+        justify-content: space-between;
+    }
     .basket-content {
         display: flex;
         align-items: flex-start;

@@ -195,14 +195,16 @@
 
         input[type="checkbox"] {
             width: 1.4rem;
+            min-width: 1.4rem;
             height: 1.4rem;
+            min-height: 1.4rem;
             aspect-ratio: 1;
             margin-top: .2rem;
             border: 1px solid #ddd;
             border-radius: .3rem;
             appearance: none;
             cursor: pointer;
-
+            position: relative;
             &:checked {
                 background-color: #ED7520;
                 border-color: #ED7520;
@@ -215,9 +217,9 @@
                     border: 2px solid #fff;
                     border-top: none;
                     border-right: none;
-                    transform: rotate(-45deg);
-                    top: 35%;
-                    left: 25%;
+                    transform: rotate(-45deg) translate(-50%, -50%);
+                    top: 20%;
+                    left: 55%;
                 }
             }
         }
@@ -225,6 +227,7 @@
         label {
             font-size: 1.4rem;
             color: #666;
+            cursor: pointer;
             @include font-regular;
             
             a {
