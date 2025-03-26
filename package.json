@@ -53,6 +53,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "easyzoom": "^2.6.0",
     "sass": "^1.85.1",
     "swiper": "^11.2.1"
   }

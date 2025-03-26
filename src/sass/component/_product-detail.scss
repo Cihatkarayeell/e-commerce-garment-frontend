@@ -28,15 +28,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         @include md{
             max-width: 100%;
+        }
+        a{
+            border: .1rem solid #ececec;
+            overflow: hidden;
+            border-radius: .5rem;
         }
         img {
             width: 100%;
             height: auto;
             object-fit: cover;
         }
-        .swiper-pagination{
+        .mySwiper-product-detail{
+            .swiper-wrapper{
+                align-items: stretch;
+            }
+            .swiper-slide{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .swiper-pagination-product-detail{
+            position: absolute;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            top: calc(100% + 3rem);
             .swiper-pagination-bullet{
                 transition: width .3s ease;
                 border-radius: 1rem;
@@ -45,6 +66,45 @@
                     width: 3rem;
                 }     
             }
+        }
+        .easyzoom {
+            display: block;
+            position: relative;
+            height: 100%;
+            a{
+                height: 100%;
+                border: .1rem solid #ececec;
+                overflow: hidden;
+                border-radius: .5rem;
+                &:hover {
+                    cursor: url('data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9IiM1MjUyNTIiICBzdHJva2Utd2lkdGg9IjIiICBzdHJva2UtbGluZWNhcD0icm91bmQiICBzdHJva2UtbGluZWpvaW49InJvdW5kIiAgY2xhc3M9Imljb24gaWNvbi10YWJsZXIgaWNvbnMtdGFibGVyLW91dGxpbmUgaWNvbi10YWJsZXItem9vbS1jb2RlIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTAgMTBtLTcgMGE3IDcgMCAxIDAgMTQgMGE3IDcgMCAxIDAgLTE0IDAiIC8+PHBhdGggZD0iTTIxIDIxbC02IC02IiAvPjxwYXRoIGQ9Ik04IDhsLTIgMmwzIDIiIC8+PHBhdGggZD0iTTEyIDhsMiAybC0yIDIiIC8+PC9zdmc+') 12 12, auto;
+                }
+                
+    
+                &.is-zoomed {
+                    cursor: move;
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .easyzoom-flyout {
+            position: absolute;
+            z-index: 100;
+            overflow: hidden;
+            z-index: 99;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            transform: scale(1.4);
+            transition: transform .3s ease;
         }
     }
 
@@ -214,6 +274,7 @@
                     &::placeholder {
                         color: #999;
                     }
+                    
                 }
             }
         }

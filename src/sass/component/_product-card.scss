@@ -1,5 +1,6 @@
 @use "../config/fonts" as *;
 @use "../config/media-query" as *;
+
 .product-card {
     background: #FFFFFF;
     padding: 1.6rem;
@@ -8,6 +9,9 @@
     text-decoration: none;
     max-width: 28.3rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
     @include sm{
         max-width: 100%;
         height: auto;
@@ -81,55 +85,66 @@
                 color: #000000;
                 text-decoration: line-through;
                 @include font-medium;
+                line-height: 1.8rem;
             }
             .current-price {
                 font-size: 1.4rem;
                 color: #ED7520;
-                @include font-bold;
+                @include font-medium;
+                line-height: 1.8rem;
             }
             .price{
                 font-size: 1.4rem;
-                line-height: 1.7rem;
+                line-height: 1.8rem;
                 color: #000000;
-                @include font-bold;
+                @include font-medium;
             }
         }
 
-        .add-to-cart {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1.2rem;
-            background: #33B36B;
-            color: #FFFFFF;
-            border-radius: .4rem;
-            text-decoration: none;
-            font-size: 1.4rem;
-            @include font-medium;
-            border: none;
-            transition: all .3s ease;
-            position: absolute;
-            bottom: calc(-4rem - 1.2rem);
-            left: 0;
-            opacity: 0;
-            visibility: hidden;
-            z-index: -1;
-            gap: 0 1rem;
-            @include sm{
-                opacity: 1;
-                visibility: visible;
-                z-index: 1;
-                position: unset;
-                margin-top: auto;
-            }
+    }
+    .add-to-cart {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem;
+        background: #33B36B;
+        color: #FFFFFF;
+        border-radius: .4rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        @include font-medium;
+        border: none;
+        transition: all .3s ease;
+        position: absolute;
+        bottom: calc(-4rem - 1.2rem);
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        gap: 0 1rem;
+        @include sm{
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+            position: unset;
+            margin-top: auto;
         }
     }
-    // &:hover {
-    //     .add-to-cart{
-    //         opacity: 1;
-    //         visibility: visible;
-    //         z-index: 1;
-    //     }
-    // }
+    .add-to-cart{
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        position: unset;
+        margin-top: auto;
+    }
+    &.version-1{
+        .add-to-cart{
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+            position: unset;
+            margin-top: auto;
+        }
+    }
 }

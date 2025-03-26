@@ -341,3 +341,15 @@ $indent-step: 0.5;
   max-height: 100vh;
   overflow-y: auto;
 }
+
+
+.swiper-pagination{
+  .swiper-pagination-bullet{
+      transition: width .3s ease;
+      border-radius: 1rem;
+      &.swiper-pagination-bullet-active{
+          background-color: #ED7520;
+          width: 3rem;
+      }     
+  }
+}

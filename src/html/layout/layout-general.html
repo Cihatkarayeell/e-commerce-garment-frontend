@@ -7,14 +7,20 @@
     <meta name="keywords" content="Webpack, Frontend, Starter Kit" />
     <meta name="description" content="Modern Frontend Development Starter Kit with Webpack" />
 
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- GLIGHTBOX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
 </head>
-<body class="{% block bodyClass %}{% endblock %}">
+<body class="{% block bodyClass %}{% endblock %}"> 
     <div class="wrapper">
         <div class="content">
             {% include "partial/header.html" %}
@@ -57,7 +63,7 @@
                                 <span class="amount">818,54₺</span>
                             </div>
                             <div class="buttons-grid">
-                                <a href="#" class="see-basket">Sepeti Görüntüle</a>
+                                <a href="basket.html" class="see-basket">Sepeti Görüntüle</a>
                                 <a href="#" class="pay">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="14"  height="14"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 0 1 5 5v3a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3v-3a5 5 0 0 1 5 -5m0 12a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2m0 -10a3 3 0 0 0 -3 3v3h6v-3a3 3 0 0 0 -3 -3" /></svg>
                                     Ödeme
@@ -65,15 +71,31 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cart-overlay"></div>
                 </div>
-                <div class="cart-overlay"></div>
 
                 {% include "partial/footer.html" %}
             </main>
         </div>
     </div>
     {% block scripts %}{% endblock %}
+
+    <!-- JQUERY --> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- GLIGHTBOX -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true,
+            preload: false
+        });
+    </script>
 </body>
 
 </html>

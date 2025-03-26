@@ -89,7 +89,75 @@
                     text-align: center;
                 }
             }
+            .review-item {
+                background: #FFFFFF;
+                border: 1px solid #ECECEC;
+                border-radius: 0.8rem;
+                padding: 2rem;
+                margin-bottom: 2.4rem;
 
+                .review-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 1.6rem;
+
+                    .reviewer-info {
+                        .reviewer-name {
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            color: #000000;
+                            @include font-medium;
+                            margin-bottom: 0.4rem;
+                        }
+
+                        .review-date {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            color: #666666;
+                            @include font-regular;
+                        }
+                    }
+
+                    .rating {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.8rem;
+
+                        .stars {
+                            display: flex;
+                            gap: 0.2rem;
+
+                            .star {
+                                font-size: 1.8rem;
+                                color: #D9D9D9;
+
+                                &.active {
+                                    color: #FFB800;
+                                }
+                            }
+                        }
+
+                        .rating-text {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            color: #666666;
+                            @include font-medium;
+                        }
+                    }
+                }
+
+                .review-content {
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 2.4rem;
+                        color: #434343;
+                        @include font-regular;
+                        margin-bottom: 0;
+                        text-align: left;
+                    }
+                }
+            }
             .review-form {
                 h3 {
                     font-size: 2rem;
@@ -290,16 +358,36 @@
                 }
             }
         }
-
+        .mySwiper-question-list,
+        .mySwiper-comment-list{
+            padding-bottom: 2rem;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            width: 100vw;
+            transform: translateX(-50%);
+            .swiper-slide{
+                max-width: 70rem;
+                @include sm{
+                    max-width: calc(100% - 8rem);
+                }
+            }
+            .swiper-pagination-bullet{
+                height: .4rem;
+            }
+        }
         .qa-header {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             margin-bottom: 2.4rem;
             flex-direction: column;
-
-           h2{
+            
+            h2{
                 @include font-semibold;
+                @include sm{
+                    margin-inline: auto;
+                }
            }
 
             .search-box {
@@ -346,7 +434,96 @@
                 }
             }
         }
+        .qa-list {
+            margin-top: 3rem;
 
+            .qa-item {
+                background: #FFFFFF;
+                border: 1px solid #ECECEC;
+                border-radius: 0.8rem;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                
+                .question, .answer {
+                    .user-info {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                        @include sm{
+                            margin-bottom: .5rem;
+                        }
+                        .name {
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            color: #000000;
+                            @include font-medium;
+                            @include sm{
+                                font-size: 1.4rem;
+                                line-height: 2rem;
+                            }
+                        }
+
+                        .date {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            color: #666666;
+                            @include font-regular;
+                            @include sm{
+                                font-size: 1.2rem;
+                                line-height: 1.8rem;
+                            }
+                        }
+                    }
+
+                    .text {
+                        font-size: 1.5rem;
+                        line-height: 2.4rem;
+                        color: #434343;
+                        @include font-regular;
+                        margin: 0;
+                        text-align: left;
+                        @include sm{
+                            font-size: 1.3rem;
+                            line-height: 1.8rem;
+
+                        }
+                    }
+                }
+
+                .answer {
+                    margin-top: 1.5rem;
+                    padding-top: 1.5rem;
+                    border-top: 1px solid #ECECEC;
+                    padding-left: 1.2rem;
+                    @include sm{
+                        padding-top: 1rem;
+                        margin-top: 1rem;
+                    }
+                    p{
+                        opacity: .8 !important;
+                        font-size: 1.3rem !important;
+                        font-weight: 400 !important;
+                        text-align: left !important;
+                    }
+                    .user-info {
+                        .name {
+                            color: #33B36B;
+                        }
+                    }
+                }
+            }
+        }
+        .all-link{
+            text-align: right;
+            width: 100%;
+            color: #ED7520;
+            text-decoration: underline;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            @include font-medium;
+            margin-top: 1rem;
+        }
         .no-questions {
             text-align: left;
             color: #434343;

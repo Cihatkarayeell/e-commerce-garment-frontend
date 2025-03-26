@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const slidingCart = document.querySelector('.sliding-cart');
     const cartOverlay = document.querySelector('.cart-overlay');
     const closeCart = document.querySelector('.close-cart');
-    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+    const addToCartButtons = document.querySelectorAll('.sliding-cart-btn');
     const cartCount = document.querySelector('.cart-count');
     const userActions = document.querySelector('.user-actions');
     const cart = document.querySelector('.cart');
