@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper-comment-list", {
     watchOverflow: true,
     roundLengths: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-comment",
         clickable: true,
     },
     breakpoints: {

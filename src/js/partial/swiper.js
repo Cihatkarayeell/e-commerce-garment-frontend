@@ -28,7 +28,7 @@ var swiper = new Swiper(".mySwiper-product-detail", {
     watchOverflow: true,
     roundLengths: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-question",
       clickable: true,
     },
     breakpoints: {
