@@ -29,6 +29,9 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        border: .1rem solid #ececec;
+        border-radius: .5rem;
+
         @include md{
             max-width: 100%;
         }
@@ -36,6 +39,7 @@
             width: 100%;
             height: auto;
             object-fit: cover;
+            border-radius: .5rem;
         }
         .mySwiper-product-detail{
             .swiper-wrapper{
@@ -44,9 +48,7 @@
             .swiper-slide{
                 width: 100%;
                 height: auto;
-                border: .1rem solid #ececec;
-                overflow: hidden;
-                border-radius: .5rem;
+               
             }
         }
         .swiper-pagination-product-detail{

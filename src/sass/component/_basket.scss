@@ -440,6 +440,7 @@
             border: .1rem solid #ECECEC;
             padding: 3rem 1rem;
             box-shadow: .4rem .4rem .4rem 0 rgb(0, 0, 0, .02);
+            align-items: stretch;
         }
 
         .en-cok-satan-item {
@@ -450,8 +451,7 @@
             flex-direction: column;
             align-items: flex-start;
             border-right: .1rem solid #ECECEC;
-            border-bottom: .1rem solid #ECECEC;
-            height: max-content;
+            height: auto;
             padding: 1.4rem 1.2rem 1.8rem 2rem;
             &:last-of-type{
                 border-right: 0;

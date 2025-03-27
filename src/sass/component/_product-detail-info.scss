@@ -58,6 +58,9 @@
         }
     }
 
+    .tab-content.değerlendirmeler{
+        max-width: 100%;
+    }
     .tab-content {
         display: none;
         margin-inline: auto;
@@ -68,6 +71,7 @@
         &.active {
             display: block;
         }
+
 
         .content {
             p {
@@ -89,83 +93,14 @@
                     text-align: center;
                 }
             }
-            .review-item {
-                background: #FFFFFF;
-                border: 1px solid #ECECEC;
-                border-radius: 0.8rem;
-                padding: 2rem;
-                margin-bottom: 2.4rem;
-
-                .review-header {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    margin-bottom: 1.6rem;
-
-                    .reviewer-info {
-                        .reviewer-name {
-                            font-size: 1.6rem;
-                            line-height: 2.4rem;
-                            color: #000000;
-                            @include font-medium;
-                            margin-bottom: 0.4rem;
-                        }
-
-                        .review-date {
-                            font-size: 1.4rem;
-                            line-height: 2rem;
-                            color: #666666;
-                            @include font-regular;
-                        }
-                    }
-
-                    .rating {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.8rem;
-
-                        .stars {
-                            display: flex;
-                            gap: 0.2rem;
-
-                            .star {
-                                font-size: 1.8rem;
-                                color: #D9D9D9;
-
-                                &.active {
-                                    color: #FFB800;
-                                }
-                            }
-                        }
-
-                        .rating-text {
-                            font-size: 1.4rem;
-                            line-height: 2rem;
-                            color: #666666;
-                            @include font-medium;
-                        }
-                    }
-                }
-
-                .review-content {
-                    p {
-                        font-size: 1.5rem;
-                        line-height: 2.4rem;
-                        color: #434343;
-                        @include font-regular;
-                        margin-bottom: 0;
-                        text-align: left;
-                    }
-                }
-            }
             .review-form {
                 h3 {
                     font-size: 2rem;
                     line-height: 2.4rem;
                     color: #000;
                     @include font-medium;
-                    margin-bottom: 1.6rem;
-                    text-align: left;
+                    margin-bottom: 2.6rem;
+                    text-align: center;
                 }
 
                 p {
