@@ -66,6 +66,9 @@ header.main-header{
                 &:last-child{
                     border-right: none;
                 }
+                @include md{
+                    border-right: none;
+                }
                 span{
                     font-size: 1.4rem;
                     line-height: normal;

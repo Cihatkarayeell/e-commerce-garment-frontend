@@ -68,7 +68,13 @@
 
     .product-content {
         position: relative;
-        @include sm{
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100% - 25rem - 1.6rem);
+        @include md{
+            min-height: auto;
+        }
+        @include sm{ 
             display: flex;
             flex-direction: column;
             height: 100%;
@@ -85,6 +91,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-decoration: none;
+            min-height: 3.8rem;
         }
 
         .product-price {
@@ -93,6 +100,8 @@
             gap: 0 1rem;
             margin-bottom: 1.2rem;
             justify-content: center;
+            max-height: 1.8rem;
+            overflow: hidden;
             .old-price {
                 font-size: 1.2rem;
                 color: #000000;

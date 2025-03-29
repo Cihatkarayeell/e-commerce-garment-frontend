@@ -34,6 +34,7 @@
 
         @include md{
             max-width: 100%;
+            margin-bottom: 3rem;
         }
         img {
             width: 100%;
@@ -58,6 +59,9 @@
             justify-content: center;
             display: flex;
             top: calc(100% + 3rem);
+            @include md{
+                top: calc(100% + 2rem);
+            }
             .swiper-pagination-bullet{
                 transition: width .3s ease;
                 border-radius: 1rem;

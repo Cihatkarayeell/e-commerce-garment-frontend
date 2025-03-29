@@ -10,6 +10,8 @@ var swiper = new Swiper(".mySwiper-comment-list", {
     pagination: {
         el: ".swiper-pagination-comment",
         clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 5
     },
     breakpoints: {
         320: {

@@ -20,6 +20,8 @@ import './partial/header';
 import './partial/swiper-2';
 import './partial/swiper';
 import './partial/easyzoom';
+import './partial/reviews-pagination';
+import './partial/comment-data';
 
 import './utilities/dom';
 import './utilities/fade-out';

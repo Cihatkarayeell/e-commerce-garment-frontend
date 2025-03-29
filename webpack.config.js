@@ -135,6 +135,10 @@ module.exports = {
           from: 'src/root-files',
           to: path.resolve(__dirname, config.dist),
           noErrorOnMissing: true
+        },
+        {
+          from: 'data.json',
+          to: 'data.json'
         }
       ]
     })

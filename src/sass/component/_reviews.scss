@@ -9,6 +9,14 @@
     margin-right: calc((100% - 117rem) / 2); 
     display: flex;
     padding-inline: 2rem;
+    @include lg{
+        flex-direction: column;
+        width: 100%;
+        margin-inline: 0;
+    }
+    @include md{
+        padding-inline:0 ;
+    }
     .reviews-header {
         display: flex;
         align-items: flex-start;
@@ -17,7 +25,12 @@
         min-width: 31%;
         margin-right: 3.2rem;
         max-width: 31%;
-
+        @include lg{
+            margin-right: 0;
+            max-width: 100%;
+            width: 100%;
+            min-width: 100%;
+        }
         .reviews-summary {
             width: 100%;
             h2 {
@@ -92,6 +105,10 @@
     .reviews-list {
         margin-left: auto;
         max-width: 80%;
+        @include lg{
+            max-width: 100%;
+            margin-left: 0;
+        }
         .review-item {
             padding: 2.4rem 0 !important;
             padding-top: 0 !important;
@@ -100,6 +117,9 @@
             background-color: transparent !important;
             border-radius: 0 !important;
             margin-bottom: 0rem !important;
+            @include sm{
+                padding-bottom: .4rem !important;
+            }
             &:last-child {
                 border-bottom: none;
             }
@@ -109,16 +129,51 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 1.6rem;
-
+                @include sm{
+                    margin-bottom: 1rem;
+                }
                 .reviewer-info {
                     display: flex;
                     align-items: center;
                     gap: 0.8rem;
-
+                    width: 100%;
                     .name {
                         font-size: 1.7rem;
                         font-weight: 500;
                         color: #333;
+                        position: relative;
+                        @include sm{
+                            font-size: 1.5rem;
+                            line-height: 1.8rem;
+                        }
+                        &:after{
+                            content:url("data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjVjMTQ1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imljb24gaWNvbi10YWJsZXIgaWNvbnMtdGFibGVyLW91dGxpbmUgaWNvbi10YWJsZXItdGh1bWItdXAiPgogICAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNyAxMXY4YTEgMSAwIDAgMSAtMSAxaC0yYTEgMSAwIDAgMSAtMSAtMXYtN2ExIDEgMCAwIDEgMSAtMWgzYTQgNCAwIDAgMCA0IC00di0xYTIgMiAwIDAgMSA0IDB2NWgzYTIgMiAwIDAgMSAyIDJsLTEgNWEyIDMgMCAwIDEgLTIgMmgtN2EzIDMgMCAwIDEgLTMgLTMiIC8+Cjwvc3ZnPgo=");
+                            position: absolute;
+                            left: calc(100% + .5rem);
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            bottom: .4rem;
+                        }
+                        &.positive{
+                            &:after{
+                                content:url("data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjVjMTQ1IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imljb24gaWNvbi10YWJsZXIgaWNvbnMtdGFibGVyLW91dGxpbmUgaWNvbi10YWJsZXItdGh1bWItdXAiPgogICAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNyAxMXY4YTEgMSAwIDAgMSAtMSAxaC0yYTEgMSAwIDAgMSAtMSAtMXYtN2ExIDEgMCAwIDEgMSAtMWgzYTQgNCAwIDAgMCA0IC00di0xYTIgMiAwIDAgMSA0IDB2NWgzYTIgMiAwIDAgMSAyIDJsLTEgNWEyIDMgMCAwIDEgLTIgMmgtN2EzIDMgMCAwIDEgLTMgLTMiIC8+Cjwvc3ZnPgo=");
+                                position: absolute;
+                                left: calc(100% + .5rem);
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                bottom: .4rem;
+                            }
+                        }
+                        &.negative{
+                            &:after{
+                                content:url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9IiNhMDA2MDYiICBzdHJva2Utd2lkdGg9IjIiICBzdHJva2UtbGluZWNhcD0icm91bmQiICBzdHJva2UtbGluZWpvaW49InJvdW5kIiAgY2xhc3M9Imljb24gaWNvbi10YWJsZXIgaWNvbnMtdGFibGVyLW91dGxpbmUgaWNvbi10YWJsZXItdGh1bWItZG93biI+PHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTcgMTN2LThhMSAxIDAgMCAwIC0xIC0xaC0yYTEgMSAwIDAgMCAtMSAxdjdhMSAxIDAgMCAwIDEgMWgzYTQgNCAwIDAgMSA0IDR2MWEyIDIgMCAwIDAgNCAwdi01aDNhMiAyIDAgMCAwIDIgLTJsLTEgLTVhMiAzIDAgMCAwIC0yIC0yaC03YTMgMyAwIDAgMCAtMyAzIiAvPjwvc3ZnPg==");
+                                position: absolute;
+                                left: calc(100% + .5rem);
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                top: .2rem;
+                            }
+                        }
                     }
 
                     .verified {
@@ -130,6 +185,7 @@
                 .review-date {
                     font-size: 1.4rem;
                     color: #999;
+                    margin-left: auto;
                 }
             }
 
@@ -140,6 +196,11 @@
                     @include font-regular;
                     color: #56524e;
                     margin-bottom: 1.6rem;
+                    text-align: left;
+                    @include sm{
+                        font-size: 1.3rem;
+                        line-height: 1.8rem;
+                    }
                 }
             }
 
@@ -157,6 +218,10 @@
                         font-size: 1.7rem;
                         @include font-medium;
                         color: #333;
+                        @include sm{
+                            font-size: 1.5rem;
+                            line-height: 1.8rem;
+                        }
                     }
 
                     .reply-date {
@@ -171,6 +236,11 @@
                         line-height: 2.1rem;
                         @include font-regular;
                         color: #56524e;
+                        text-align: left;
+                        @include sm{
+                            font-size: 1.3rem;
+                            line-height: 1.8rem;
+                        }
                     }
                 }
             }
@@ -182,7 +252,8 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 4rem;
-
+        width:max-content;
+        margin-inline:auto;
         button {
             font-size: 1.5rem;
             @include font-medium;
@@ -192,7 +263,6 @@
             display: flex;
             align-items: center;
             gap: 0 .5rem;
-
             &:disabled {
                 opacity: 0.5;
                 cursor: not-allowed;
@@ -207,21 +277,31 @@
                     object-fit: cover;
                 }
             }
+            @include md{
+                span{
+                    display: none;
+                    &.btn-icon{
+                        display: block;
+                    }
+                }
+            }
         }
 
         .page-numbers {
             display: flex;
             align-items: center;
             gap: 0.8rem;
-
             a,span {
-                padding: 0.6rem 1rem;
+                padding: 0.6rem .5rem;
                 font-size: 1.5rem;
                 @include font-medium;
                 color: #333;
                 text-decoration: none;
                 border-radius: 0.4rem;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 3.7rem;
                 &.current {
                     background: #f8f8f8;
                     color: #000;
@@ -229,6 +309,9 @@
 
                 &.dots {
                     color: #999;
+                    @include md{
+                        display: none;
+                    }
                 }
 
                 &:hover:not(.current, .dots) {
@@ -251,9 +334,7 @@
         }
 
         .reviews-pagination {
-            flex-direction: column;
             gap: 1rem;
-
             .page-numbers {
                 flex-wrap: wrap;
                 justify-content: center;
