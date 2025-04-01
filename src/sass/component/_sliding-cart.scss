@@ -19,12 +19,14 @@
     opacity: 0;
     visibility: hidden;
     position: fixed;
-    inset:0;
-    .cart-container{
+    inset: 0;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 5;
+    .cart-container {
         background-color: #fff;
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -35rem; // width kadar negatif değer
         height: 100%;
         transition: right 0.4s ease;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
@@ -33,12 +35,18 @@
         flex-direction: column;
         z-index: 6;
     }
+
     &.active {
         opacity: 1;
         visibility: visible;
-        z-index: 5;
-        .cart-container{
+
+        .cart-container {
             right: 0;
+        }
+
+        .cart-overlay {
+            opacity: 1;
+            visibility: visible;
         }
     }
     .cart-overlay {

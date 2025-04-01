@@ -17,7 +17,6 @@ import './partial/sss';
 import './partial/basket-quantity';
 import './partial/sliding-cart';
 import './partial/header';
-import './partial/swiper-2';
 import './partial/swiper';
 import './partial/easyzoom';
 import './partial/reviews-pagination';
